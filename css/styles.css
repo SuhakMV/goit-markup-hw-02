@@ -1,0 +1,68 @@
+
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --primary-background-color:#E5E5E5;
+    --primary-white-color:#FFFFFF;
+    --acent-color:#2196F3;
+}
+body {font-family: 'Montserrat', sans-serif;
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+ul {list-style: none;}
+
+.logo-header{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3; 
+}
+/*Section*/
+.section-title{
+    color: var(--title-text-color);
+}
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+/*Examples*/
+.work-list .title {
+    color: var(--title-text-color);
+}
+
+/*Button*/
+.button{
+    color: var(--title-text-color);
+    background-color: var(--primary-background-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+/* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button.primary{
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+}
+
+.button.order{
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
