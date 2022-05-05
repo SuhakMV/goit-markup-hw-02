@@ -7,10 +7,6 @@ body
     {font-family: 'Roboto', 'sans-serif';
     color: var(--primary-text-color);}
 
-*,
-*::before,
-*::after {box-sizing: border-box;}
-
 /*First Page*/
 /*Header section*/
 .page-header {background-color: #FFFFFF;}
@@ -45,8 +41,8 @@ body
     color: var(--primary-title-color);}
 
 .studio {color: #2196F3;} 
-.mail {
-    color: #2196F3;
+
+.mail {color: var(--primary-text-color);
     text-transform: lowercase;}
 
 .phone {
@@ -56,26 +52,18 @@ body
 .logo-first:focus,
 .link:hover, 
 .link:focus 
-    {text-decoration: underline;
-    text-decoration-color: #2196F3;
+    {text-decoration-color: #2196F3;
     color: #2196F3;}
-
-.studio:hover,
-.studio:focus,
-.mail:hover, 
-.mail:focus 
-    {color: #212121;}
     
 /*Hero section*/
-
 .hero {
-    background-color: #2F303A;}
+    background-color: #2F303A;
+    text-align: center;}
 
 .hero-title {    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;}
@@ -86,15 +74,15 @@ body
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
     background-color: #2196F3;
     color: #FFFFFF;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+    cursor: pointer;}
+
+.btn-order:hover,
+.btn-order:focus {color:#2196F3;
+    background-color:#FFFFFF;}
 
 /*Features section*/
 .features-title {visibility: hidden;}
@@ -117,7 +105,7 @@ body
 .text::first-letter {
     text-transform: capitalize;}
 
-/*Work Section*/
+/*Work section*/
 .section-title {
     font-size: 36px;
     line-height: 1.17;
@@ -129,16 +117,14 @@ body
 
 .work-list {list-style: none;}
 
-/*Team Section*/
-.team {
-    background-color: #F5F4FA}
+/*Team section*/
+.team {background-color: #F5F4FA;}
 
 .team-item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;}
-
-.team-list {list-style: none;
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;}
+
+.team-list {list-style: none;}
 
 .team-title {
     font-size: 16px;
@@ -154,7 +140,7 @@ body
     text-align: center;
     letter-spacing: 0.03em;}
 
-/*Footer Section*/
+/*Footer section*/
 .page-footer {background-color: #2F303A;}
 
 .page-footer .logo-second {
@@ -193,15 +179,12 @@ body
 
 .mail-portfolio {color: var(--primary-text-color);}
 
-.portfolio:hover, 
-.portfolio:focus 
-    {color: #212121;}
-
-/*Filter and Portfolio Section*/
-
+/*Filter and portfolio section*/
 .filter> .section-title {display: none;}
 
 .filter-list {list-style: none;}
+
+.btn-item {text-align: left;}
 
 .btn {
     font-family: 'Roboto';
@@ -209,11 +192,9 @@ body
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
     border-radius: 4px;
-    border: #F5F4FA;
     padding: 6px 22px;
     color: var(--primary-title-color);}
 
@@ -221,18 +202,21 @@ body
     background-color: #2196F3;
     color: #FFFFFF;}
 
-/*Portfolio*/
+.btn:hover,
+.btn:focus {
+    background-color: #2196F3;
+    color:#FFFFFF;}
 
+/*Portfolio*/
 .portfolio-list {list-style: none;}
 
 .portfolio-item {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;}
+    background: #FFFFFF;}
 
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 2px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);}
 
